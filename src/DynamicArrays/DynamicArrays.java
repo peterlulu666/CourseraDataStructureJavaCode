@@ -51,14 +51,15 @@ public class DynamicArrays<AnyType> {
     }
 
     void extendArray() {
-        this.capacity = this.capacity * 2;
-        var newArray = (AnyType[]) new Object[this.capacity];
+        int newCapacity = this.capacity * 2;
+        var newArray = (AnyType[]) new Object[newCapacity];
         for (int i = 0; i < currentSize; i++) {
             newArray[i] = arr[i];
 
         }
-//        if (currentSize - 1 >= 0) System.arraycopy(arr, 0, newArray, 0, currentSize - 1);
-        arr = newArray;
+//        if (currentSize >= 0) System.arraycopy(arr, 0, newArray, 0, currentSize);
+        this.capacity = newCapacity;
+        this.arr = newArray;
 
     }
 
