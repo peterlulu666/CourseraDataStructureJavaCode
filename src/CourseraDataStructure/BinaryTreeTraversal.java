@@ -51,7 +51,6 @@ class Traversal<AnyType> {
 
     }
 
-
     Node insertNode(AnyType data) {
         var newNode = new Node<AnyType>(data);
         return newNode;
@@ -62,7 +61,7 @@ class Traversal<AnyType> {
 
 public class BinaryTreeTraversal {
     public static void main(String[] args) {
-        var traversal = new TreeTraversal<String>();
+        var traversal = new Traversal<String>();
         var root = traversal.insertNode("Les");
         root.left = traversal.insertNode("Cathy");
         root.left.left = traversal.insertNode("Alex");
