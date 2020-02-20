@@ -1,4 +1,4 @@
-package CourseraDataStructure;
+package BinaryTreeTraversal;
 
 class Node<AnyType> {
     AnyType data;

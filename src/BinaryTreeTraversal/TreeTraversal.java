@@ -1,4 +1,4 @@
-package CourseraDataStructure;
+package BinaryTreeTraversal;
 
 public class TreeTraversal<AnyType> {
     class Node {
