@@ -74,7 +74,7 @@ public class BinaryTreeTraversal {
         root.right.right.right = traversal.insertNode("Wendy");
 //        traversal.inOrderTraversal(root);
 //        traversal.preOrderTraversal(root);
-        traversal.postOrderTraversal(root);      
+        traversal.postOrderTraversal(root);
 
     }
 
