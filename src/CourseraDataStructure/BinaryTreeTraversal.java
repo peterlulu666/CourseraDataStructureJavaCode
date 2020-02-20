@@ -27,7 +27,7 @@ class Traversal<AnyType> {
 
     }
 
-    void preOrderTraversal(Node node){
+    void preOrderTraversal(Node node) {
         if (node == null) {
             return;
 
@@ -39,7 +39,7 @@ class Traversal<AnyType> {
 
     }
 
-    void postOrderTraversal(Node node){
+    void postOrderTraversal(Node node) {
         if (node == null) {
             return;
 
@@ -72,8 +72,8 @@ public class BinaryTreeTraversal {
         root.right.right = traversal.insertNode("Violet");
         root.right.right.left = traversal.insertNode("Tony");
         root.right.right.right = traversal.insertNode("Wendy");
-//        traversal.inOrderTraversal(root);
-//        traversal.preOrderTraversal(root);
+        traversal.inOrderTraversal(root);
+        traversal.preOrderTraversal(root);
         traversal.postOrderTraversal(root);
 
     }
